@@ -1,4 +1,68 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://angelodealwisgit.github.io/"
+languageCode = "en-us"
+title = "Angelo de Alwis"
 theme = "PaperMod"
+
+[params]
+  # General
+  env = "production"
+  description = "Personal CV and Portfolio"
+  author = "Angelo de Alwis"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+
+  # Profile Mode (good for CV-style site)
+  [params.profileMode]
+    enabled = true
+    title = "Angelo de Alwis"
+    subtitle = "Psychiatrist"
+    imageUrl = "profile.jpg"    # put your profile picture in /static/ folder
+    imageTitle = "Profile picture"
+    imageWidth = 200
+    imageHeight = 200
+
+    [[params.profileMode.buttons]]
+      name = "CV"
+      url = "cv.pdf"
+
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "Contact"
+      url = "mailto:youremail@example.com"
+
+  # Social Icons
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/angelodealwisgit"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/yourprofile"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/yourhandle"
+
+# Menu (optional – for top nav)
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
